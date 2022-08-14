@@ -1,0 +1,198 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+  grid-template-rows: 10vh 50vh 10vh;
+  gap: 10px;
+}
+
+section {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
+  color: white;
+  font-size: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section > h1 {
+  margin: 10px;
+}
+
+section > h2 {
+  margin: 10px;
+  font-size: 30px;
+}
+
+#login {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+#login-form > input:nth-child(1) {
+  width: 90%;
+  height: 5vh;
+  margin: 20px 0px;
+  text-align: center;
+  border-radius: 20px;
+  border: 4px solid white;
+  background: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+#login-form > input:nth-child(1)::placeholder {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#login-form > input:nth-child(2) {
+  width: 50%;
+  height: 5vh;
+  background: none;
+  border: 4px solid white;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+#login-form > input:nth-child(2):hover {
+  background: white;
+  color: black;
+}
+
+#login-result {
+  color: white;
+}
+#logout-bt {
+  width: 55%;
+  height: 5vh;
+  border-radius: 10px;
+  border: 4px solid white;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+#logout-bt:hover {
+  background: white;
+  color: black;
+}
+
+#weather {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  border-radius: 20px;
+  color: white;
+  font-weight: 800;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+#quote {
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#quote > span:nth-child(1) {
+  font-size: 25px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+}
+
+#quote > span:nth-child(3) {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+aside {
+  grid-column: 2 / span 1;
+  grid-row: 1 / -1;
+  height: 80vh;
+  background: rgba(230, 205, 167, 0.5);
+  border-radius: 20px;
+}
+
+aside > div > h1 {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+aside > div > form > h1 {
+  color: rgb(115, 16, 16);
+  background: rgba(237, 237, 233, 0.5);
+  border-radius: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#todo-form > input {
+  width: 90%;
+  height: 5vh;
+  border: none;
+  border-bottom: 2px solid white;
+  margin: 10px 10px 5px 10px;
+  background-color: transparent;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+input::placeholder {
+  color: white;
+  font-style: italic;
+  padding-left: 10px;
+  font-weight: 800;
+}
+
+ul {
+  list-style: none;
+  color: rgb(196, 99, 77);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+ul > li {
+  border-bottom: 5px solid rgb(115, 16, 16);
+  border-radius: 20px;
+  margin-bottom: 10px;
+  background: rgba(237, 237, 233, 0.5);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+button {
+  border: 2px solid white;
+  border-radius: 50%;
+  outline: 0;
+  background-color: transparent;
+  color: white;
+  margin: 10px;
+}
+
+.hidden {
+  display: none;
+}
